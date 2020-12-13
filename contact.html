@@ -31,41 +31,45 @@
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
         <form class="form-inline my-2 my-lg-0">
           <!-- Change href to link to other works-->
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="#">Contact</a>
           <a class="nav-link" href="#">Portfolio</a>
           <a class="nav-link" href="index.html">About</a>
         </form>
       </div>
     </nav>
 
-    <!-- Start of container -->
-    <main class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <div class="card mb-3">
-            <div class="row no-gutters">
-              <div class="col-md-4">
-                <img
-                  src="https://via.placeholder.com/350x350"
-                  class="card-img"
-                  alt="Placeholder picture"
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h1 class="card-title"><strong>About Me</strong></h1>
-                  <p>
-                    My name is Elton Lac. I am currently learning HTML and CSS.<br />
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugiat quis perferendis vitae tempore aspernatur eveniet
-                    aliquam, sapiente quaerat sint perspiciatis voluptatum eum,
-                    quidem minima. Iure voluptas illo deleniti fugiat quidem!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- Contact form-->
+    <main>
+      <div class="container">
+        <form>
+          <h1 class="card-title"><strong>Contact</strong></h1>
+
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+          />
+
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+          />
+
+          <label for="subject">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
       </div>
     </main>
 
