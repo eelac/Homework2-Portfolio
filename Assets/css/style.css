@@ -1,6 +1,5 @@
 /* CSS for all pages */
 body {
-  font-family: Arial, Helvetica, sans-serif;
   background-image: url("../imgs/ignasi_pattern_s.png");
 }
 
@@ -16,6 +15,7 @@ body {
 /* CSS for index container */
 .card-title {
   font-size: 24px;
+  font-weight: bold;
   color: #005bf8;
 }
 
@@ -24,6 +24,11 @@ body {
 }
 
 /* CSS for contact container */
+.contact-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #005bf8;
+}
 input[type="text"],
 select,
 textarea {
@@ -54,4 +59,70 @@ input[type="submit"]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+/* CSS for portfolio container */
+
+.portfolio-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #005bf8;
+    padding-top: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
